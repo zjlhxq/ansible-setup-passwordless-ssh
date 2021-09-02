@@ -1,13 +1,21 @@
 [local_host]
-localhost ansible_port=22 ansible_user=username ansible_password=password ansible_host=127.0.0.1
-
+docker.nextgen.io ansible_port=22 ansible_user=nextgen ansible_password=!Nextgen123 ansible_host=127.0.0. 
 
 [local_host:vars]
 ssh_key_filename="ansible_rsa"
-remote_machine_username="root"
-remote_machine_password="xxxxxxxxxxxxxxxxxxxxxx"
+remote_machine_username="nextgen"
+remote_machine_password="!Nextgen123"
 
 
 [ansible_setup_passwordless_setup_group]
-rhel-green ansible_port=22 ansible_user=root ansible_host=192.168.1.1
-rhel-red   ansible_port=9022 ansible_user=root ansible_host=192.168.1.2
+ccm-l2-kafka-node1.nextgen.io ansible_port=22 ansible_user=nextgen ansible_host=10.183.13.150
+ccm-l2-kafka-node2.nextgen.io ansible_port=22 ansible_user=nextgen ansible_host=10.183.13.151
+ccm-l2-kafka-node3.nextgen.io ansible_port=22 ansible_user=nextgen ansible_host=10.183.13.152
+ccm1-l2-app-node1.nextgen.io ansible_port=22 ansible_user=nextgen ansible_host=10.183.13.153
+ccm1-l2-app-node2.nextgen.io ansible_port=22 ansible_user=nextgen ansible_host=10.183.13.154
+ccm2-l2-app-node1.nextgen.io ansible_port=22 ansible_user=nextgen ansible_host=10.183.13.155
+ccm2-l2-app-node2.nextgen.io ansible_port=22 ansible_user=nextgen ansible_host=10.183.13.156
+ccm-l2-ui-node1.nextgen.io ansible_port=22 ansible_user=nextgen ansible_host=10.183.13.157
+ccm-l2-ui-node2.nextgen.io ansible_port=22 ansible_user=nextgen ansible_host=10.183.13.158
+ccm2-l2-dev.nextgen.io ansible_port=22 ansible_user=nextgen ansible_host=10.183.13.160
+
